@@ -1,22 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './components/About'
 import Landing from './components/Landing'
+import Navbar from "./components/Navbar"
 
-// Import statements...
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-hero-pattern h-[fit-content]">
+    <Navbar />
+
+      <div className="bg-hero">
         <div className="">
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/landing" element={<Landing />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
