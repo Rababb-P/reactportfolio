@@ -13,14 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="bg-hero">
-        <div className="">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
