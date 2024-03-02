@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 
 export default function Navbar() {
   const homeMatch = useMatch({ path: "/", exact: true });
@@ -13,6 +13,11 @@ export default function Navbar() {
         Rababb Pannu
       </Link>
       <ul>
+        <li className={addActiveClass(homeMatch)}>
+          <Link to="/" className="page-link">
+            Home
+          </Link>
+        </li>
         <li className={addActiveClass(hobbiesMatch)}>
           <Link to="/hobbies" className="page-link">
             Hobbies
