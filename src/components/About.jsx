@@ -1,8 +1,16 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div>About</div>
+        <motion.div
+          className="about-page-text"
+          initial={{ height: "20%" }}
+          animate={{ height: 0 }}
+          transition={{ duration: 1 }}
+        >
+          About
+        </motion.div>
   )
 }
 
