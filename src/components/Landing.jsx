@@ -15,8 +15,6 @@ const Landing = () => {
     >
       <p>Hey! I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
 
-      <Cube />
-
     </motion.div>
   )
 }
