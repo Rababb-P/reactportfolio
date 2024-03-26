@@ -81,6 +81,7 @@ body {
 
 }
 
+
 .page-link::after {
   content: "";
   display: block;
@@ -116,13 +117,9 @@ body {
 .about-page-text {
   color: white;
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 35%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 30px;
-}
-
-.blue-colour {
-  color: #3a61c6
+  text-align: left;
+  font-size: 40px;
 }
