@@ -66,7 +66,7 @@ const TiltCard = () => {
           style={{
             transform: "translateZ(50px)",
           }}
-          className="text-center text-2xl font-bold text-black"
+          className="text-center text-2xl font-bold blue-colour"
         >
           Instagram
         </p>
