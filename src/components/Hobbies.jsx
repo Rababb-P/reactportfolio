@@ -16,7 +16,7 @@ const Hobbies = () => {
 
         <p className="text-white text-sm py-10 leading-relaxed">I am a programmer for my schools FIRST Robotics team, Iron Bears (Team 854), where I<br></br> code our robot in Java using the WPILIB library. I also recently won a robotics competiton<br></br> which involved coding an autonomous rover controlled by Arduino in C++</p>
 
-        <p className="text-white text-sm py-10 leading-relaxed">I play ball hockey in a league and practice often during my spare time. <br></br>I have gone to provincials for ball hockey three times, playing for the Toronto Pilots twice<br></br> and the Etobicoke Hurricanes once, and won bronze twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team</p>
+        <p className="text-white text-sm py-10 leading-relaxed">I play ball hockey in a league and practice often during my spare time. <br></br>I have gone to provincials for ball hockey three times, playing for the Toronto Pilots twice<br></br> and the Etobicoke Hurricanes once, and I have won bronze at provincials twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee teams.</p>
 
       </div>
       <Cube />
