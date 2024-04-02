@@ -14,7 +14,7 @@ const Cube = () => {
         <div className='cubespinner'>
 
           <div className='face1'>
-            <img src={hockeystickicon} alt="stickcon"/>
+            <img src={reacticon} alt="reactcon"/>
           </div>
 
           <div className='face2'>
@@ -22,11 +22,11 @@ const Cube = () => {
           </div>
 
           <div className='face3'>
-            <img src={reacticon} alt="reactcon"/>
+            <img src={javaicon} alt="javacon"/>
           </div>
 
           <div className='face4'>
-            <img src={javaicon} alt="javacon"/>
+            <img src={hockeystickicon} alt="stickcon"/>
           </div>
 
           <div className='face5'>

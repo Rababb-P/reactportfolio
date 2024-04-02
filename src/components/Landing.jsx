@@ -1,11 +1,19 @@
-import React from 'react';
+import { useEffect, useState, React } from 'react'
 import { motion } from 'framer-motion';
 import instagram from '../assets/instagram.svg'
 import TiltCard from './tiltcards';
 import tiltcards from '../constants'
-import Cube from './Cube';
+import AnimatedLetters from './AnimatedLetters';
 
 const Landing = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  useEffect(() => {
+    setTimeout(() => {
+        setLetterClass('text-animate-hover')
+    }, 2000);   
+  },[])
+
   return (
     <motion.div 
       className="about-page-text "
@@ -13,7 +21,12 @@ const Landing = () => {
       animate={{ height: 0 }}
       transition={{ duration: 1 }}
     >
-      <p>Hey! I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
+      <AnimatedLetters 
+        letterClass={letterClass}
+        strArray={['H','e','y','!']}
+        idx={15}
+      />
+      <p>I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
 
     </motion.div>
   )

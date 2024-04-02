@@ -1,0 +1,56 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: spin 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+}
+
+.text-animate-hover:hover {
+  animation: tilthang 1s;
+  color: #00ff88;
+}
+
+@keyframes spin {
+  from {
+      opacity: 0;
+      transform: rotate(0deg);
+  }
+  50% {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes tilthang {
+  from {
+      transform: rotate(0deg);
+  }
+  30% {
+      transform: rotate(15deg);
+  }
+  40% {
+      transform: rotate(-15deg);
+  }
+  50% {
+      transform: rotate(10deg);
+  }
+  65% {
+      transform: rotate(-10deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
