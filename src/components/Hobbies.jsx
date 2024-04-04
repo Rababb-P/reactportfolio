@@ -18,11 +18,11 @@ const Hobbies = () => {
     animate={{ translateY: 400 }} 
     transition={{ duration: 1 }}
     >
-      <div className="about-page-text mt-20 pt-20 dark-blue">
+      <div className="about-page-text">
         <AnimatedLetters 
           letterClass={letterClass}
           strArray={['H','o','b','b','i','e','s']}
-          idx={14}
+          idx={15}
         />
         {/* <p className="">I participate in many activities<br></br> both inside and outside of school,<br></br> and here are some of the main ones</p>  */}
 

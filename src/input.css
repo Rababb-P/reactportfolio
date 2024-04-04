@@ -117,9 +117,19 @@ body {
 .about-page-text {
   color: white;
   position: absolute;
-  top: 35%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+  top: -15vh;
+  left: 60vh;
+  transform: translate(-40vh, -35vh);
+  text-align: left;
+  font-size: 3.2vh;
+}
+
+.normal-text {
+  color: white;
+  position: absolute;
+  top: 50vh;
+  left: 60vh;
+  transform: translate(-40vh, -35vh);
   text-align: left;
   font-size: 3.2vh;
 }
@@ -129,7 +139,7 @@ body {
 }
 
 .text-sm {
-  font-size: 20px;
+  font-size: 2vh;
 }
 
 .text-lg {
@@ -139,3 +149,4 @@ body {
 .dark-blue {
   color: #ffffff;
 }
+

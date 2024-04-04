@@ -16,18 +16,18 @@ const Landing = () => {
 
   return (
     <motion.div 
-      className="about-page-text "
       initial={{ height: "20%" }}
       animate={{ height: 0 }}
       transition={{ duration: 1 }}
     >
+    <div className="about-page-text">
       <AnimatedLetters 
         letterClass={letterClass}
         strArray={['H','e','y','!']}
         idx={15}
       />
       <p>I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
-
+    </div>
     </motion.div>
   )
 }
