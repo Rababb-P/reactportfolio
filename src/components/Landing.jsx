@@ -20,7 +20,7 @@ const Landing = () => {
       animate={{ height: 0 }}
       transition={{ duration: 1 }}
     >
-    <div className="about-page-text">
+    <div className="normal-text">
       <AnimatedLetters 
         letterClass={letterClass}
         strArray={['H','e','y','!']}
