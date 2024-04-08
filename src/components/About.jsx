@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.div
-      initial={{ height: "20%" }}
-      animate={{ height: 0 }}
+      initial={{ translateY: "20vh" }} 
+      animate={{ translateY: "35vh" }} 
       transition={{ duration: 1 }}
     >
-      <p className="normal-text">About</p>
+      <p className="about-page-text">About</p>
 
     </motion.div>
   )

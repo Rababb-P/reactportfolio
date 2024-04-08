@@ -16,11 +16,11 @@ const Landing = () => {
 
   return (
     <motion.div 
-      initial={{ height: "20%" }}
-      animate={{ height: 0 }}
-      transition={{ duration: 1 }}
+    initial={{ translateY: "20vh" }} 
+    animate={{ translateY: "35vh" }} 
+    transition={{ duration: 1 }}
     >
-    <div className="normal-text">
+    <div className="about-page-text">
       <AnimatedLetters 
         letterClass={letterClass}
         strArray={['H','e','y','!']}

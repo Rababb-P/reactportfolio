@@ -14,7 +14,7 @@ const Hobbies = () => {
 
   return (
     <motion.div
-    initial={{ translateY: "10vh" }} 
+    initial={{ translateY: "20vh" }} 
     animate={{ translateY: "35vh" }} 
     transition={{ duration: 1 }}
     >
