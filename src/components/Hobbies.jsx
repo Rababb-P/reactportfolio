@@ -15,7 +15,7 @@ const Hobbies = () => {
   return (
     <motion.div
     initial={{ translateY: "10vh" }} 
-    animate={{ translateY: "40vh" }} 
+    animate={{ translateY: "35vh" }} 
     transition={{ duration: 1 }}
     >
       <div className="about-page-text">
