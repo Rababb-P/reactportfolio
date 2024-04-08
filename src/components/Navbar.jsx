@@ -43,7 +43,7 @@ export default function Navbar() {
         </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/rababb-pannu-a103b82b6/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/rababb-pannu" target="_blank" rel="noopener noreferrer">
         <img src={linkedinicon} className="w-6 h-6 mr-2" />
         </a>
         </li>

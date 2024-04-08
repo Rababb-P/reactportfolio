@@ -117,7 +117,7 @@ body {
 .about-page-text {
   color: white;
   position: absolute;
-  top: -20vh;
+  top: 10vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
