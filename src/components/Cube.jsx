@@ -14,7 +14,7 @@ const Cube = () => {
         <div className='cubespinner'>
 
           <div className='face1'>
-            <img src={reacticon} alt="reactcon"/>
+            <img src={reacticon} alt="reactcon" className=''/>
           </div>
 
           <div className='face2'>
