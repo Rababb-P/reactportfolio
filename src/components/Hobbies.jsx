@@ -15,10 +15,10 @@ const Hobbies = () => {
   return (
     <motion.div
     initial={{ translateY: "20vh" }} 
-    animate={{ translateY: "35vh" }} 
+    animate={{ translateY: "30vh" }} 
     transition={{ duration: 1 }}
     >
-      <div className="about-page-text">
+      <div className="about-page-text green-text">
         <AnimatedLetters 
           letterClass={letterClass}
           strArray={['H','o','b','b','i','e','s']}
@@ -26,7 +26,9 @@ const Hobbies = () => {
         />
         {/* <p className="">I participate in many activities<br></br> both inside and outside of school,<br></br> and here are some of the main ones</p>  */}
 
-        <p className="text-white text-sm py-10 leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br> Check out our website here: https://mcibeacon.com/ </p>
+        <p className="text-white text-sm py-10 leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br> Check out our website here:</p>
+        
+        <a className="beac-button" href="https://mcibeacon.com/" target="_blank" rel="noopener noreferrer">Click here</a>
 
         <p className="text-white text-sm py-10 leading-relaxed">I am a programmer for my schools FIRST Robotics team, Iron Bears (Team 854), where I<br></br> code our robot in Java using the WPILIB library. I also recently won a UofT robotics competiton<br></br>with my friends, which involved building and coding an autonomous rover controlled by Arduino</p>
 

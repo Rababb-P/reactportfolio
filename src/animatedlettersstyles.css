@@ -14,7 +14,7 @@
 
 .text-animate-hover:hover {
   animation: tilthang 1s;
-  color: #00ff88;
+  color: #718cff;
 }
 
 @keyframes spin {
