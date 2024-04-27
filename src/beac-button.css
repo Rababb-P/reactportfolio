@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.beac-button {
+  /* top: -16vh;
+  position: absolute;
+  left: 100vh; */
+
+  --b: 0px;   /* border thickness */
+  --s: 0em; /* size of the corner */
+  --c: #ffffff;
+  
+  padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  transition: .2s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .2em;
+}
+
+.beac-button:hover,
+.beac-button:focus-visible{
+  --b: 2px;
+  --_p: 0px;
+  --c: #3a61c6;
+  outline-color: var(--c);
+  outline-offset: .05em;
+}
+
+.beac-button {
+  font-family: system-ui, sans-serif;
+  font-weight: medium;
+  font-size: 2.5vh;
+  cursor: pointer;
+  border: none;
+  margin: .1em;
+}

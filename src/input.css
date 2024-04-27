@@ -151,7 +151,13 @@ body {
   color: #ffffff;
 }
 
-.beac-button {
+.py-hob {
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+
+/* .beac-button {
   display: inline-block;
   padding: 8px 16px;
   font-size: 16px;
@@ -159,7 +165,7 @@ body {
   color: #fff;
   background-color: #3a61c6; 
   border: 2px solid #3a61c6;
-  border-radius: 3px;
+  border-radius: 1000px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -169,4 +175,4 @@ body {
 .beac-button:hover {
   background-color: #002490;
   border-color: #002490;
-}
+} */

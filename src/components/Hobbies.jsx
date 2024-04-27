@@ -2,6 +2,8 @@ import { useEffect, useState, React } from 'react'
 import { motion } from 'framer-motion';
 import Cube from './Cube';
 import AnimatedLetters from './AnimatedLetters';
+import '../beac-button.css';
+
 
 const Hobbies = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -26,15 +28,18 @@ const Hobbies = () => {
         />
         {/* <p className="">I participate in many activities<br></br> both inside and outside of school,<br></br> and here are some of the main ones</p>  */}
 
-        <p className="text-white text-sm py-10 leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br> Check out our website here:</p>
+        <p className="text-white text-lg py-hob leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br></p>
         
-        <a className="beac-button" href="https://mcibeacon.com/" target="_blank" rel="noopener noreferrer">Click here</a>
+        <a className="beac-button" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Website →</button></a>
 
-        <p className="text-white text-sm py-10 leading-relaxed">I am a programmer for my schools FIRST Robotics team, Iron Bears (Team 854), where I<br></br> code our robot in Java using the WPILIB library. I also recently won a UofT robotics competiton<br></br>with my friends, which involved building and coding an autonomous rover controlled by Arduino</p>
+        <p className="text-white text-lg py-10 leading-relaxed">I am the head programmer for my schools FIRST Robotics team, Iron Bears (Team 854), where I<br></br> code our robot in Java using the WPILIB framework. I also recently won a UofT Hackathon competiton<br></br>with my friends, which involved building and coding an autonomous and remotely controllable rover controlled in Arduino.</p>
 
-        <p className="text-white text-sm py-10 leading-relaxed">I play ball hockey in a league and practice often during my spare time. <br></br>I have gone to provincials for ball hockey three times, playing for the Toronto Pilots twice<br></br> and the Etobicoke Hurricanes once, and I have won bronze at provincials twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team.</p>
+        <p className="text-white text-lg py-10 leading-relaxed">I play ball hockey in a few leagues and practice/workout often during my spare time. <br></br>I have played mainly for the Toronto Pilots and the Etobicoke Hurricanes,<br></br> and I have gone to Ontario Ball Hockey Provincials 3 times, winning bronze twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team.</p>
 
-      </div>
+      </div>        
+      
+ 
+
       <Cube />
     </motion.div>
   )
