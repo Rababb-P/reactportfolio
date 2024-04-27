@@ -1,7 +1,7 @@
 .stage-cube-cont {
   top: -8vh;
   position: absolute;
-  left: 163vh;
+  left: 150vh;
 }
 
   .cubespinner {
@@ -10,8 +10,8 @@
     animation-iteration-count: infinite;
     animation-duration: 15s;
     transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
+    transform-origin: 20vh 20vh 0;
+    margin-left: calc(50% - 20vh);
   }
   
   .cubespinner div {
