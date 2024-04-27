@@ -27,8 +27,8 @@ const Hobbies = () => {
           idx={15}
         />
         {/* <p className="">I participate in many activities<br></br> both inside and outside of school,<br></br> and here are some of the main ones</p>  */}
-    
-        <p className="text-white text-sm py-hob leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br></p>
+
+        <p className="text-white text-lg py-hob leading-relaxed">I am the proud Co-President of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br></p>
         
         <a className="beac-button" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Website →</button></a>
 
