@@ -165,6 +165,12 @@ body {
   padding-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .text-white {
+    font-size: 1.8vh; /* Adjust font size for smaller screens */
+  }
+}
+
 
 /* .beac-button {
   display: inline-block;
