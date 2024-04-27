@@ -142,7 +142,6 @@ body {
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
-  font-size: 3.2vh;
 }
 
 .transform {
@@ -154,7 +153,7 @@ body {
 }
 
 .text-lg {
-  font-size: 10vh;
+  font-size: 3.2vh;
 }
 
 .dark-blue {
