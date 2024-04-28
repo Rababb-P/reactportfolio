@@ -20,7 +20,7 @@ const Hobbies = () => {
     animate={{ translateY: "30vh" }} 
     transition={{ duration: 1 }}
     >
-      <div className="about-page-text">
+      <div className="hobbies-page-text">
         <AnimatedLetters 
           letterClass={letterClass}
           strArray={['H','o','b','b','i','e','s']}

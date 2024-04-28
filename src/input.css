@@ -115,7 +115,7 @@ body {
   background-color: #3a61c6;
 }
 
-.about-page-text {
+.hobbies-page-text {
   color: white;
   position: absolute;
   top: 10vh;
@@ -125,14 +125,14 @@ body {
   font-size: 2.2vh;
 }
 
-.otherabout-page-text {
+.about-page-text {
   color: white;
   position: absolute;
   top: 10vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
-  font-size: 1.6vh;
+  font-size: 3.2vh;
 }
 
 .normal-text {
@@ -164,30 +164,3 @@ body {
   padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
-
-@media screen and (max-width: 1200px) {
-  .text-white {
-    font-size: 1.8vh; /* Adjust font size for smaller screens */
-  }
-}
-
-
-/* .beac-button {
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #3a61c6; 
-  border: 2px solid #3a61c6;
-  border-radius: 1000px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.beac-button:hover {
-  background-color: #002490;
-  border-color: #002490;
-} */
