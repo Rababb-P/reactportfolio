@@ -3,13 +3,15 @@
   opacity: 0;
   animation: spin 1s 1s;
   animation-fill-mode: forwards;
-  min-width: 10px;
+  min-width: 0px;
+  font-size: 3vh;
 }
 
 .text-animate-hover {
-  min-width: 10px;
+  min-width: 0px;
   display: inline-block;
   animation-fill-mode: both;
+  font-size: 3vh;
 }
 
 .text-animate-hover:hover {

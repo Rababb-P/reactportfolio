@@ -21,7 +21,7 @@ const Hobbies = () => {
     transition={{ duration: 1 }}
     >
       <div className="hobbies-page-text">
-        <AnimatedLetters 
+        <AnimatedLetters
           letterClass={letterClass}
           strArray={['H','o','b','b','i','e','s']}
           idx={15}
@@ -32,9 +32,9 @@ const Hobbies = () => {
         
         <a className="beac-button" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Website →</button></a>
 
-        <p className="text-white py-10 leading-relaxed">I am the head programmer for my schools FIRST Robotics team, Iron Bears (Team 854),<br></br> where I code our robot in Java using the WPILIB framework. I also recently won a UofT<br></br> Hackathon competitonwith my friends, which involved building and coding an autonomous<br></br> and remotely controllable rover controlled in Arduino.</p>
+        <p className="text-white py-hob leading-relaxed">I am the head programmer for my schools FIRST Robotics team, Iron Bears (Team 854),<br></br> where I code our robot in Java using the WPILIB framework. I also recently won a UofT<br></br> Hackathon competitonwith my friends, which involved building and coding an autonomous<br></br> and remotely controllable rover controlled in Arduino.</p>
 
-        <p className="text-white py-10 leading-relaxed">I play ball hockey in a few leagues and practice/workout often during my spare time. <br></br>I have played mainly for the Toronto Pilots and the Etobicoke Hurricanes,<br></br> and I have gone to Ontario Ball Hockey Provincials 3 times, winning bronze twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team.</p>
+        <p className="text-white py-hob leading-relaxed">I play ball hockey in a few leagues and practice/workout often during my spare time. <br></br>I have played mainly for the Toronto Pilots and the Etobicoke Hurricanes,<br></br> and I have gone to Ontario Ball Hockey Provincials 3 times, winning bronze twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team.</p>
 
       </div>        
       
