@@ -34,17 +34,17 @@ export default function Navbar() {
         </li>
         <li>
           <a href="https://www.instagram.com/rababb_p" target="_blank" rel="noopener noreferrer">
-        <img src={instagram} alt='ig' className="w-6 h-6 mr-2" />
+        <img src={instagram} className="social-icon w-6 h-6 mr-2" />
         </a>
         </li>
         <li>
           <a href="https://github.com/Rababb-P" target="_blank" rel="noopener noreferrer">
-        <img src={githubicon} className="w-6 h-6 mr-2" />
+        <img src={githubicon} className="social-icon w-6 h-6 mr-2" />
         </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/rababb-pannu" target="_blank" rel="noopener noreferrer">
-        <img src={linkedinicon} className="w-6 h-6 mr-2" />
+        <img src={linkedinicon} className="social-icon w-6 h-6 mr-2" />
         </a>
         </li>
       </ul>

@@ -165,3 +165,7 @@ body {
   padding-bottom: 2vh;
 }
 
+.social-icon {
+  height: 2.75vh;
+  width: 2.75vh;
+}
