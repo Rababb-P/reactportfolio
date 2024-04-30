@@ -49,7 +49,7 @@ body {
 }
 
 .site-title {
-  font-size: 2.5rem;
+  font-size: 5vh;
 }
 
 .nav ul {
@@ -71,7 +71,7 @@ body {
 
 .page-link {
   font-weight: medium;
-  font-size: 18px;
+  font-size: 2vh;
   display: block;
   color: #3a61c6;
   text-align: center;
@@ -90,7 +90,7 @@ body {
   height: 1px;
   background-color: transparent;
   position: absolute;
-  bottom: 15px;
+  bottom: 2vh;
   left: 50%;
   transform: translateX(-50%);
   transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
