@@ -33,7 +33,7 @@ const Hobbies = () => {
         
         <a className="beac-button" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Website →</button></a>
 
-        <a className="beac-button px-6" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>My Articles →</button></a>
+        <a className="beac-button px-6" href="https://mcibeacon.com/member/rababb-pannu" target="_blank" rel="noopener noreferrer"><button>My Articles →</button></a>
 
         <p className="text-white py-hob leading-relaxed">I am the head programmer for my schools FIRST Robotics team, Iron Bears (Team 854),<br></br> where I code our robot in Java using the WPILIB framework. I also recently won a UofT<br></br> Hackathon competitonwith my friends, which involved building and coding an autonomous<br></br> and remotely controllable rover controlled in Arduino.</p>
 
