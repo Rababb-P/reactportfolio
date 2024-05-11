@@ -12,13 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className='bg-hero'>
-        <div className='bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
+        <Navbar />
+        <div>
+        
+        <Landing />
+        <Hobbies />
+        <About />
         </div>
       </div>
     </BrowserRouter>

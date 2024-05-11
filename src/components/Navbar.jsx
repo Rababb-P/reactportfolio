@@ -13,26 +13,26 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <Link to="/" className={`site-title ${addActiveClass(homeMatch)}`}>
+      <a href="#landing" className={`site-title ${addActiveClass(homeMatch)}`}>
         Rababb Pannu
-      </Link>
+      </a>
       <ul>
         <li className={addActiveClass(homeMatch)}>
-          <Link to="/" className="page-link">
+          <a href="#landing" className="page-link">
             Home
-          </Link>
+          </a>
         </li>
         <li className={addActiveClass(hobbiesMatch)}>
-          <Link to="/hobbies" className="page-link">
+          <a href="#hobbies" className="page-link">
             Hobbies
-          </Link>
+          </a>
         </li>
         <li className={addActiveClass(aboutMatch)}>
-          <Link to="/about" className="page-link">
+          <a href="#about" className="page-link">
             About
-          </Link>
+          </a>
         </li>
-        <li>
+        <li >
           <a href="https://www.instagram.com/rababb_p" target="_blank" rel="noopener noreferrer">
         <img src={instagram} className="social-icon w-6 h-6 mr-2" />
         </a>
@@ -48,7 +48,6 @@ export default function Navbar() {
         </a>
         </li>
       </ul>
-
     </nav>
   );
 }

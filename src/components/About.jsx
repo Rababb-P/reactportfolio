@@ -8,7 +8,13 @@ const About = () => {
       animate={{ translateY: "35vh" }} 
       transition={{ duration: 1 }}
     >
-      <p className="about-page-text">About</p>
+      <div id="about" className="top-about"></div>
+      <div className="about-page-text">
+        <p >
+          About
+        </p>
+      </div>
+      
 
     </motion.div>
   )

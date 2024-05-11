@@ -20,7 +20,9 @@ const Landing = () => {
     animate={{ translateY: "35vh" }} 
     transition={{ duration: 1 }}
     >
-    <div className="about-page-text">
+
+    <div id="landing" className="top-landing"></div>
+    <div className="landing-page-text">
       <AnimatedLetters 
         letterClass={letterClass}
         strArray={['H','e','y','!']}
