@@ -1,1 +1,1 @@
-  This is Rababb Pannu's portfolio which I am creating to learn react!
+  This is my portfolio, currently in progress.
