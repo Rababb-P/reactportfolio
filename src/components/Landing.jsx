@@ -4,6 +4,7 @@ import instagram from '../assets/instagram.svg'
 import TiltCard from './tiltcards';
 import tiltcards from '../constants'
 import AnimatedLetters from './AnimatedLetters';
+import ParticlesComponent from './particles'
 
 const Landing = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -15,22 +16,25 @@ const Landing = () => {
   },[])
 
   return (
-    <motion.div 
-    initial={{ translateY: "20vh" }} 
-    animate={{ translateY: "35vh" }} 
-    transition={{ duration: 1 }}
-    >
-
-    <div id="landing" className="top-landing"></div>
-    <div className="landing-page-text">
-      <AnimatedLetters 
-        letterClass={letterClass}
-        strArray={['H','e','y','!']}
-        idx={15}
-      />
-      <p>I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
+    <div className="bg-black">
+      <motion.div 
+      initial={{ translateY: "20vh" }} 
+      animate={{ translateY: "35vh" }} 
+      transition={{ duration: 1 }}
+      >
+      
+      <div id="landing" className="top-landing"></div>
+      
+      <div className="landing-page-text">
+        <AnimatedLetters 
+          letterClass={letterClass}
+          strArray={['H','e','y','!']}
+          idx={15}
+        />
+        <p>I'm Rababb,<br/> an AP high school student at <br/>Martingrove Collegiate Institute.</p>
+      </div>
+      </motion.div>
     </div>
-    </motion.div>
   )
 }
 

@@ -41,7 +41,7 @@ body {
 .nav {
   position: sticky;
   top: 0;
-  background-color: #010613;
+  background-color: transparent;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -110,7 +110,7 @@ body {
 .hobbies-page-text {
   color: white;
   position: absolute;
-  top: 100vh;
+  top: 10vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
@@ -120,7 +120,7 @@ body {
 .about-page-text {
   color: white;
   position: absolute;
-  top: 200vh;
+  top: 90vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
@@ -165,7 +165,7 @@ body {
 
 .top-hobbies {
   position: absolute;
-  top: 50vh;
+  top: -40vh;
 }
 
 .top-landing {
@@ -175,9 +175,30 @@ body {
 
 .top-about {
   position: absolute;
-  top: 150vh;
+  top: 40vh;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.bg-black {
+  background-color: black;
+  color: white; /* Ensure text is visible */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+.bg-blackish {
+  background-color: black;
+  height: 280vh;
+}
+
+.particles {
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  width: 10vh;
+  height: 10vh;
+  z-index: -1; /* Ensure particles are behind other content */
 }
