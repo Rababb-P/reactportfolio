@@ -24,7 +24,7 @@ export default function Navbar() {
         </li>
         <li className={addActiveClass(hobbiesMatch)}>
           <a href="#hobbies" className="page-link">
-            Hobbies
+            Activities
           </a>
         </li>
         <li className={addActiveClass(aboutMatch)}>

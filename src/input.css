@@ -110,7 +110,7 @@ body {
 .hobbies-page-text {
   color: white;
   position: absolute;
-  top: 10vh;
+  top: 100vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
@@ -120,7 +120,7 @@ body {
 .about-page-text {
   color: white;
   position: absolute;
-  top: 90vh;
+  top: 160vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
@@ -165,7 +165,7 @@ body {
 
 .top-hobbies {
   position: absolute;
-  top: -40vh;
+  top: 50vh;
 }
 
 .top-landing {
@@ -175,18 +175,11 @@ body {
 
 .top-about {
   position: absolute;
-  top: 40vh;
+  top: 150vh;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-.bg-black {
-  background-color: black;
-  color: white; /* Ensure text is visible */
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full width */
 }
 
 .bg-blackish {
@@ -201,4 +194,35 @@ html {
   width: 10vh;
   height: 10vh;
   z-index: -1; /* Ensure particles are behind other content */
+}
+
+.webheight {
+  height: 280vh;
+}
+
+.accordion {
+  position: relative;
+  top: 103vh;
+  left: 21vh;
+  width: 80vh;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.accordion-icon.open {
+  transform: rotate(90deg);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-sm {
+  font-size: 2vh; /* Convert font size to vh */
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }

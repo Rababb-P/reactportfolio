@@ -1,49 +1,83 @@
-import { useEffect, useState, React } from 'react'
-import { motion } from 'framer-motion';
-import Cube from './Cube';
-import AnimatedLetters from './AnimatedLetters';
-import '../beac-button.css';
-
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Cube from "./Cube";
+import AnimatedLetters from "./AnimatedLetters";
+import "../beac-button.css";
+import Accordion from "./Accordion";
 
 const Hobbies = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
+  const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
-        setLetterClass('text-animate-hover')
-    }, 2000);     
-  },[])
+      setLetterClass("text-animate-hover");
+    }, 2000);
+  }, []);
+
+  const handleToggle = (index) => {
+    setOpenAccordionIndex(openAccordionIndex === index ? null : index);
+  };
 
   return (
-    <motion.div 
-    initial={{ translateY: "20vh" }} 
-    animate={{ translateY: "30vh" }} 
-    transition={{ duration: 1 }}
-    >
-      <div id="hobbies" className="top-hobbies"></div>
-      <div  className="hobbies-page-text">
-        <AnimatedLetters
-          letterClass={letterClass}
-          strArray={['H','o','b','b','i','e','s']}
-          idx={15}
+    <>
+      <motion.div
+        initial={{ translateY: "20vh" }}
+        animate={{ translateY: "30vh" }}
+        transition={{ duration: 1 }}
+      >
+        <div id="hobbies" className="top-hobbies"></div>
+        <div className="hobbies-page-text">
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={["A", "c", "t", "i", "v", "t", "i", "e", "s"]}
+            idx={15}
+          />
+        </div>
+        <Cube />
+      </motion.div>
+
+      <div className="accordion">
+        <Accordion
+          title="School Clubs"
+          answer={[
+            "I am the Co-President of of my school's newspaper, The Beacon. We release issues monthly and print 500 copies of each issue to distribute to our school.",
+            "I am the student-elected Vice-President of my school's Student Administrative Council. I help organize and run assemblies, clubs, spirit days, events and more at my school.",
+            "I am the head of programming for my school's First Robotics Team, Team 854, Iron Bears. I code our robot in Java using the WPILIB framework and teach younger students how to do the same."
+          ]}
+          isOpen={openAccordionIndex === 0}
+          onToggle={() => handleToggle(0)}
         />
-        {/* <p className="">I participate in many activities<br></br> both inside and outside of school,<br></br> and here are some of the main ones</p>  */}
+        <Accordion
+          title="Hackathons and Competitions"
+          answer={[
+            "I have participated in 5 hackathons over the past two years.",
+            "I recently won UofT Seek Jr 2024, in which my team and I created a rover controlled by Arduino that autonomously navigated a maze, and then was controlled by a phone via Bluetooth connection to locate and scan three barcodes.",
+            "I have completed many coding and math competitions, such as University of Waterloo's CCC, Fermat, and Hypatia contests."
+          ]}
+          isOpen={openAccordionIndex === 1}
+          onToggle={() => handleToggle(1)}
+        />
+        <Accordion
+          title="Sports"
+          answer={[
+            "I currently play ball hockey for the Toronto Pilots, for whom I have gone to the U18 Ontario Ball Hockey Provincial Tournament twice, winning bronze once. I used to play for the Etobicoke Hurricanes, for whom I went to the U16 Ontario Ball Hockey Provincial Tournament once.",
+            "I have played on my high school's Varsity Ice Hockey and Varsity Frisbee teams for two years each, and competed in my school's Track and Field and Volleyball teams for one year each."
+          ]}
+          isOpen={openAccordionIndex === 2}
+          onToggle={() => handleToggle(2)}
+        />
+        <Accordion
+          title="Volunteering"
+          answer={[
+            "I have volunteered at Seva Food Bank Malton for three years, where I organize shipments, stock shelves, and give food to those in need."
+          ]}
+          isOpen={openAccordionIndex === 3}
+          onToggle={() => handleToggle(3)}
+        />
+      </div>
+    </>
+  );
+};
 
-        <p className="text-white py-hob leading-relaxed">I am the Co-Editor-in-Chief (Co-President) of my school's newspaper, The Beacon. <br></br>We release issues monthly and print 500 copies of each issue to distribute to our school.<br></br></p>
-        
-        <a className="beac-button" href="https://thebeacon.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Website →</button></a>
-
-        <a className="beac-button px-6" href="https://mcibeacon.com/member/rababb-pannu" target="_blank" rel="noopener noreferrer"><button>My Articles →</button></a>
-
-        <p className="text-white py-hob leading-relaxed">I am the head programmer for my schools FIRST Robotics team, Iron Bears (Team 854),<br></br> where I code our robot in Java using the WPILIB framework. I also recently won a UofT<br></br> Hackathon competitonwith my friends, which involved building and coding an autonomous<br></br> and remotely controllable rover controlled in Arduino.</p>
-
-        <p className="text-white py-hob leading-relaxed">I play ball hockey in a few leagues and practice/workout often during my spare time. <br></br>I have played mainly for the Toronto Pilots and the Etobicoke Hurricanes,<br></br> and I have gone to Ontario Ball Hockey Provincials 3 times, winning bronze twice!<br></br>In school, I play for the Varsity Ice Hockey team and the Varsity Frisbee team.</p>
-
-      </div>        
-      
-      <Cube />
-    </motion.div>
-  )
-}
-
-export default Hobbies
+export default Hobbies;
