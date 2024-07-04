@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { SwipeCarousel } from './SwipeCarousel';
 
 const About = () => {
   return (
@@ -14,6 +15,8 @@ const About = () => {
           About
         </p>
       </div>
+      <SwipeCarousel />
+      
       
 
     </motion.div>

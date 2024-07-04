@@ -119,8 +119,8 @@ body {
 
 .about-page-text {
   color: white;
-  position: absolute;
-  top: 160vh;
+  position: fixed;
+  top: 190vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
   text-align: left;
@@ -201,8 +201,8 @@ html {
 }
 
 .accordion {
-  position: relative;
-  top: 103vh;
+  position: absolute;
+  top: 110vh;
   left: 21vh;
   width: 80vh;
   padding: 1rem;
@@ -225,4 +225,8 @@ html {
 .accordion-content {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.carousel {
+  top: 160vh;
 }

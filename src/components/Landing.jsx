@@ -1,10 +1,7 @@
 import { useEffect, useState, React } from 'react'
 import { motion } from 'framer-motion';
-import instagram from '../assets/instagram.svg'
-import TiltCard from './tiltcards';
-import tiltcards from '../constants'
 import AnimatedLetters from './AnimatedLetters';
-import ParticlesComponent from './particles'
+import { SwipeCarousel } from './SwipeCarousel';
 
 const Landing = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
