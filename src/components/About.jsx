@@ -13,7 +13,7 @@ const About = () => {
       <div id="about" className="top-about"></div>
       <div className="about-page-text">
         <p >
-          About
+          My Projects
         </p>
       </div>
       <SwipeCarousel />

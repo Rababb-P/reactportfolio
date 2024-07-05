@@ -30,7 +30,7 @@ export default function Navbar() {
         </li>
         <li className={addActiveClass(aboutMatch)}>
           <a href="#about" className="page-link">
-            About
+            Projects
           </a>
         </li>
         <li className={addActiveClass(contactMatch)}>
@@ -38,6 +38,7 @@ export default function Navbar() {
             Contact
           </a>
         </li>
+        {/*
         <li >
           <a href="https://www.instagram.com/rababb_p" target="_blank" rel="noopener noreferrer">
         <img src={instagram} className="social-icon w-6 h-6 mr-2" />
@@ -53,6 +54,7 @@ export default function Navbar() {
         <img src={linkedinicon} className="social-icon w-6 h-6 mr-2" />
         </a>
         </li>
+         */}
       </ul>
     </nav>
   );

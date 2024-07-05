@@ -30,7 +30,7 @@ const Hobbies = () => {
         <div className="hobbies-page-text">
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={["A", "c", "t", "i", "v", "t", "i", "e", "s"]}
+            strArray={["A", "c", "t", "i", "v","i", "t", "i", "e", "s"]}
             idx={15}
           />
         </div>

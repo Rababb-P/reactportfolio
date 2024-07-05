@@ -245,9 +245,14 @@ html {
 .contact-text {
   color: white;
   position: absolute;
-  top: 325vh;
-  left: 60vh;
+  top: 320vh;
+  left: 70vh;
   transform: translate(-40vh, -35vh);
   text-align: center;
   font-size: 3.2vh;
+}
+
+.contactimages {
+  position: relative;
+  top: 228vh;
 }
