@@ -63,7 +63,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative w-[50vw] overflow-hidden bg-neutral-950 py-4 mx-auto carousel">
+    <div className="relative w-[50vw] overflow-hidden py-4 mx-auto carousel">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -117,7 +117,7 @@ const Images = ({ imgIndex }) => {
 
 const Dots = ({ imgIndex, setImgIndex }) => {
   return (
-    <div className="mt-2 flex w-full justify-center gap-1">
+    <div className="noz mt-2 flex w-full justify-center gap-1">
       {imgs.map((_, idx) => (
         <button
           key={idx}

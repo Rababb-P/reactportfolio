@@ -44,6 +44,7 @@ body {
   background-color: transparent;
   color: white;
   display: flex;
+  z-index: 1000;
   justify-content: space-between;
   align-items: stretch;
   gap: 2vh;
@@ -115,11 +116,12 @@ body {
   transform: translate(-40vh, -35vh);
   text-align: left;
   font-size: 2.2vh;
+  z-index: 1;
 }
 
 .about-page-text {
   color: white;
-  position: fixed;
+  position: absolute;
   top: 190vh;
   left: 60vh;
   transform: translate(-40vh, -35vh);
@@ -175,7 +177,7 @@ body {
 
 .top-about {
   position: absolute;
-  top: 150vh;
+  top: 140vh;
 }
 
 html {
@@ -197,7 +199,7 @@ html {
 }
 
 .webheight {
-  height: 280vh;
+  height: 370vh;
 }
 
 .accordion {
@@ -229,4 +231,23 @@ html {
 
 .carousel {
   top: 160vh;
+}
+
+.noz {
+  z-index: -1000;
+}
+
+.top-contact {
+  position: absolute;
+  top: 300vh
+}
+
+.contact-text {
+  color: white;
+  position: absolute;
+  top: 325vh;
+  left: 60vh;
+  transform: translate(-40vh, -35vh);
+  text-align: center;
+  font-size: 3.2vh;
 }

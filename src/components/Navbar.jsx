@@ -8,6 +8,7 @@ export default function Navbar() {
   const homeMatch = useMatch({ path: "/", exact: true });
   const hobbiesMatch = useMatch("/hobbies");
   const aboutMatch = useMatch("/about");
+  const contactMatch = useMatch("/content")
 
   const addActiveClass = (isMatched) => (isMatched ? "active" : "");
 
@@ -30,6 +31,11 @@ export default function Navbar() {
         <li className={addActiveClass(aboutMatch)}>
           <a href="#about" className="page-link">
             About
+          </a>
+        </li>
+        <li className={addActiveClass(contactMatch)}>
+          <a href="#contact" className="page-link">
+            Contact
           </a>
         </li>
         <li >

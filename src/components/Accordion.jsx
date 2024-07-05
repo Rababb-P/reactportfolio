@@ -53,7 +53,7 @@ const Accordion = ({ title, answer, isOpen, onToggle }) => {
           transition: "max-height 0.3s ease-in-out",
         }}
       >
-        <ul style={{ padding: "2vh 0", listStyleType: "disc", paddingLeft: "2vh" }}>
+        <ul style={{ padding: "2vh 0", listStyleType: "none", paddingLeft: "2vh" }}>
           {answer.map((sentence, index) => (
             <li key={index} style={{ marginBottom: "1vh" }}>
               {sentence}

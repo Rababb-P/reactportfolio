@@ -8,7 +8,7 @@ import Accordion from "./Accordion";
 const Hobbies = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
-
+  
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");

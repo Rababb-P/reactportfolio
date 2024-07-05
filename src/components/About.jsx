@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { SwipeCarousel } from './SwipeCarousel';
+import AnimatedLetters from './AnimatedLetters';
 
 const About = () => {
   return (

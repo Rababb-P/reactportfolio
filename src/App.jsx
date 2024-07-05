@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Landing from './components/Landing';
 import Hobbies from './components/Hobbies';
+import Contact from './components/Contact'
 import Navbar from "./components/Navbar";
 import ParticlesComponent from './components/particles';
 
@@ -19,6 +20,7 @@ function App() {
           <Landing />
           <Hobbies />
           <About />
+          <Contact />
         </div>
       </div>
     </BrowserRouter>
