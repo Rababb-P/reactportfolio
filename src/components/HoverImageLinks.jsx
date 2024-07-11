@@ -5,6 +5,7 @@ import githubIcon from "../assets/githubicon.svg";
 import linkedinicon from "../assets/linkedinicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 import BeaconIcon from "../assets/apple-touch-icon.png";
+import "../input.css";  // Assuming the CSS is saved in styles.css
 
 const imgs = [
   gmailIcon,
@@ -40,8 +41,8 @@ const imgSubHeadings = [
 
 export const HoverImageLinks = () => {
   return (
-    <section className="p-2 md:p-5">
-      <div className="mx-auto max-w-2xl">
+    <section className="container">
+      <div className="link-container">
         {imgs.map((imgSrc, idx) => (
           <Link
             key={idx}
@@ -91,7 +92,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between py-2 transition-colors duration-500 md:py-6"
+      className="link"
     >
       <div>
         <motion.span
@@ -104,7 +105,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-2xl font-bold text-white transition-colors duration-500 group-hover:text-[#3a61c6] md:text-3xl"
+          className="link-heading link-heading-md"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -120,7 +121,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-1 block text-sm text-white transition-colors duration-500 group-hover:text-[#3a61c6]">
+        <span className="link-subheading">
           {subheading}
         </span>
       </div>
@@ -138,7 +139,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-12 w-16 rounded-lg object-cover md:h-20 md:w-28"
+        className="link-image link-image-md"
         alt={`Image representing a link for ${heading}`}
       />
 
@@ -154,7 +155,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           },
         }}
         transition={{ type: "spring" }}
-        className="relative z-10 p-2"
+        className="link-div"
       >
       </motion.div>
     </motion.a>

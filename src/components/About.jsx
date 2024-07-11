@@ -16,7 +16,7 @@ const About = () => {
           My Projects
         </p>
       </div>
-      <SwipeCarousel />
+      <div><SwipeCarousel /></div>
       
       
 

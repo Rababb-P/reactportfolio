@@ -5,6 +5,7 @@ import githubIcon from "../assets/githubicon.svg";
 import hockeyStickIcon from "../assets/hockeystickicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 
+
 const imgs = [
   firstIcon,
   githubIcon,
@@ -63,7 +64,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative w-[50vw] overflow-hidden py-4 mx-auto carousel">
+    <div className="carousel-container">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -78,7 +79,7 @@ export const SwipeCarousel = () => {
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
-        className="flex cursor-grab items-center active:cursor-grabbing"
+        className="carousel-inner"
       >
         <Images imgIndex={imgIndex} />
       </motion.div>
@@ -97,16 +98,14 @@ const Images = ({ imgIndex }) => {
           key={idx}
           style={{
             backgroundImage: `url(${imgSrc})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
           }}
           animate={{
             scale: imgIndex === idx ? 0.95 : 0.85,
           }}
           transition={SPRING_OPTIONS}
-          className="relative aspect-[16/9] w-[50vw] shrink-0 rounded-lg bg-neutral-800 object-cover"
+          className="image-container"
         >
-          <div className="absolute top-0 left-0 w-full p-2 text-center text-white bg-black bg-opacity-50">
+          <div className="image-text">
             {imgTexts[idx]}
           </div>
         </motion.div>
@@ -117,14 +116,12 @@ const Images = ({ imgIndex }) => {
 
 const Dots = ({ imgIndex, setImgIndex }) => {
   return (
-    <div className="noz mt-2 flex w-full justify-center gap-1">
+    <div className="dots-container">
       {imgs.map((_, idx) => (
         <button
           key={idx}
           onClick={() => setImgIndex(idx)}
-          className={`h-2 w-2 rounded-full transition-colors ${
-            idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"
-          }`}
+          className={`dot ${idx === imgIndex ? "dot-active" : "dot-inactive"}`}
         />
       ))}
     </div>
@@ -134,8 +131,8 @@ const Dots = ({ imgIndex, setImgIndex }) => {
 const GradientEdges = () => {
   return (
     <>
-      <div className="pointer-events-none absolute bottom-0 left-0 top-0 w-[5vw] max-w-[50px] bg-gradient-to-r from-neutral-950/50 to-neutral-950/0" />
-      <div className="pointer-events-none absolute bottom-0 right-0 top-0 w-[5vw] max-w-[50px] bg-gradient-to-l from-neutral-950/50 to-neutral-950/0" />
+      <div className="gradient-edge gradient-edge-left" />
+      <div className="gradient-edge gradient-edge-right" />
     </>
   );
 };
