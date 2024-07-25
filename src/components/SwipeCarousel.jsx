@@ -4,20 +4,22 @@ import firstIcon from "../assets/firsticon.svg";
 import githubIcon from "../assets/githubicon.svg";
 import hockeyStickIcon from "../assets/hockeystickicon.svg";
 import instagramIcon from "../assets/instagram.svg";
+import seekJrWin from "../assets/seekjrwin.png";
+import sandc from "../assets/sandcpic.png";
 
 
 const imgs = [
-  firstIcon,
-  githubIcon,
+  seekJrWin,
+  sandc,
   hockeyStickIcon,
   instagramIcon,
 ];
 
 const imgTexts = [
-  "First Icon",
-  "GitHub Icon",
-  "Hockey Stick Icon",
-  "Instagram Icon",
+  "",
+  "Job Shadowing Program at S&C Electric Canada Ltd.",
+  "Remotely Controllable Rover with AI human and object detection",
+  "Head of Programming of Iron Bears FRC Team 854",
 ];
 
 const ONE_SECOND = 1000;
