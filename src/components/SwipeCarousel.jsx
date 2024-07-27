@@ -6,13 +6,15 @@ import hockeyStickIcon from "../assets/hockeystickicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 import seekJrWin from "../assets/seekjrwin.png";
 import sandc from "../assets/sandcpic.png";
+import apoc from "../assets/apocpic.jpg";
+import frcpic from "../assets/frcpic.png";
 
 
 const imgs = [
   seekJrWin,
   sandc,
-  hockeyStickIcon,
-  instagramIcon,
+  apoc,
+  frcpic,
 ];
 
 const imgTexts = [
