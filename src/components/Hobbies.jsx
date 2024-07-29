@@ -53,7 +53,7 @@ const Hobbies = () => {
           title="Hackathons and Competitions"
           answer={[
             "I have participated in 5 hackathons over the past two years.",
-            "I recently won UofT Seek Jr 2024, in which my team and I created a rover controlled by Arduino that autonomously navigated a maze, and then was controlled by a phone via Bluetooth connection to locate and scan three barcodes.",
+            "I recently won UofT Seek Jr 2024, in which my team and I created a rover controlled by Arduino that autonomously navigated a maze, which then was controlled by a phone via Bluetooth connection to locate and scan three barcodes.",
             "I have completed many coding and math competitions, such as University of Waterloo's CCC, Fermat, and Hypatia contests."
           ]}
           isOpen={openAccordionIndex === 1}
