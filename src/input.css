@@ -227,6 +227,7 @@ html {
 .accordion-content {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  font-size: 2vh;
 }
 
 .carousel {
@@ -256,6 +257,7 @@ html {
 .contactimages {
   position: relative;
   top: 285vh;
+  width: 100vh;
 }
 
 .container {
@@ -384,11 +386,59 @@ html {
   background-color: #737373;
 }
 
-/*
 @media (max-width: 768px) {
-  .bg-blackish {
-    width: 305vw;
-    height: 400vh;
+  .site-title {
+    font-size: 2vh;
   }
+
+  .accordion {
+    left: 3vh;
+    max-width: 50vh; /* Ensure it doesn't exceed screen width */
+  }
+
+  .accordion-content {
+    font-size: 2vh;
+  }
+
+  .hobbies-page-text{
+    left: 42vh;
+  }
+
+  .webheight{
+    height: 550vh;
+  }
+
+  .carousel-container {
+    top: 240vh;
+    left: 10vh;
+  }
+
+  .about-page-text {
+    top: 240vh;
+    left: 50vh;
+  }
+
+  .contact-text {
+    top: 420vh;
+    left: 42vh;
+    width: 50vh;
+  }
+
+  .contactimages {
+    top: 440vh;
+    left: -60vh;
+  }
+
+  .image-text {
+    font-size: 2vh;  
+  }
+
+  .top-about {
+    top: 190vh;
+  }
+
+  .top-contact {
+    top: 370vh;
+  }
+
 }
-  */

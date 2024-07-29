@@ -78,4 +78,10 @@
   }
   
 
-  
+  @media (max-width: 768px) {
+    .stage-cube-cont {
+      top: 160vh;
+      position: absolute;
+      left: 30vh;
+    }
+  }

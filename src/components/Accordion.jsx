@@ -47,7 +47,6 @@ const Accordion = ({ title, answer, isOpen, onToggle }) => {
         ref={contentRef}
         className="accordion-content"
         style={{
-          fontSize: "2vh",
           maxHeight: isOpen ? height : "0px",
           overflow: "hidden",
           transition: "max-height 0.3s ease-in-out",
