@@ -26,7 +26,7 @@ const imgTexts = [
 const imgLinks = [
   "https://mail.google.com/mail/?view=cm&fs=1&to=rababb.s.pannu@gmail.com",
   "https://github.com/Rababb-P",
-  "https://www.linkedin.com/",
+  "https://www.linkedin.com/in/rababb-pannu/",
   "https://www.instagram.com/rababb_p",
   "https://thebeacon.vercel.app/",
 ];
