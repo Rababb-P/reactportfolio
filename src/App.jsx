@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className=' webheight bg-blackish //bg-gradient-to-r from-indigo-500 to-blue-600'>
+      <div className=' webheight bg-blackish'>
         <Navbar />
         <div>
           <ParticlesComponent />
