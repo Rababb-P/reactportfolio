@@ -5,7 +5,8 @@ import githubIcon from "../assets/githubicon.svg";
 import linkedinicon from "../assets/linkedinicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 import BeaconIcon from "../assets/apple-touch-icon.png";
-import "../input.css";  // Assuming the CSS is saved in styles.css
+import ResumeIcon from "../assets/resume3.png";
+import "../input.css";
 
 const imgs = [
   gmailIcon,
@@ -13,6 +14,7 @@ const imgs = [
   linkedinicon,
   instagramIcon,
   BeaconIcon,
+  ResumeIcon,
 ];
 
 const imgTexts = [
@@ -21,6 +23,7 @@ const imgTexts = [
   "LinkedIn",
   "Instagram",
   "Beacon",
+  "Resume",
 ];
 
 const imgLinks = [
@@ -29,15 +32,8 @@ const imgLinks = [
   "https://www.linkedin.com/in/rababb-pannu/",
   "https://www.instagram.com/rababb_p",
   "https://thebeacon.vercel.app/",
+  "https://www.canva.com/design/DAF5PLcIfdw/-AlQ14L7cG6Mlv5aMs15mA/edit?utm_content=DAF5PLcIfdw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 ];
-
-const imgSubHeadings = [
-  "Check",
-  "This",
-  "Out",
-  "Now",
-  "Fr",
-]
 
 export const HoverImageLinks = () => {
   return (
@@ -47,7 +43,6 @@ export const HoverImageLinks = () => {
           <Link
             key={idx}
             heading={imgTexts[idx]}
-            /*subheading={imgSubHeadings[idx]}*/
             imgSrc={imgSrc}
             href={imgLinks[idx]}
           />
