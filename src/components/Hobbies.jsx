@@ -50,10 +50,10 @@ const Hobbies = () => {
           onToggle={() => handleToggle(0)}
         />
         <Accordion
-          title="Hackathons and Competitions"
+          title="Programming and Robotics"
           answer={[
-            "I have participated in 5 hackathons over the past two years.",
-            "I recently won UofT Seek Jr 2024, in which my team and I created a rover controlled by Arduino that autonomously navigated a maze, which then was controlled by a phone via Bluetooth connection to locate and scan three barcodes.",
+            "I have attended UofT's CREATE camp for two summers. This summer, my team and I built a React JS website to display the 2022 Soccer World Cup team stats from a database, which we turned into graphs using pandas and matplotlib.",
+            "I have participated in 5 hackathons over the past two years, and recently won UofT Seek Jr 2024, in which my team and I created a rover controlled by Arduino that autonomously navigated a maze, which then was controlled by a phone via Bluetooth connection to locate and scan three barcodes.",
             "I have completed many coding and math competitions, such as the University of Waterloo's CCC, Fermat, and Hypatia contests."
           ]}
           isOpen={openAccordionIndex === 1}
