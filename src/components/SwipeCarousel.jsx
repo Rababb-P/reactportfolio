@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import firstIcon from "../assets/firsticon.svg";
 import githubIcon from "../assets/githubicon.svg";
@@ -6,26 +6,34 @@ import hockeyStickIcon from "../assets/hockeystickicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 import seekJrWin from "../assets/seekjrwin.png";
 import sandc from "../assets/sandcpic.png";
-import apoc from "../assets/apocpic.jpg";
+import aisort from "../assets/aisortnocam.jpg";
 import frcpic from "../assets/frcpic.png";
-
+import fifa from "../assets/fifasite.png";
 
 const imgs = [
   seekJrWin,
   sandc,
-  apoc,
+  aisort,
   frcpic,
+  fifa,
 ];
 
 const imgTexts = [
   "",
   "Job Shadowing Program at S&C Electric Canada Ltd.",
-  "Remotely Controllable Rover with AI human and object detection",
+  "AI Garbage and Recycling Sorter",
   "Head of Programming of Iron Bears FRC Team 854",
+  "Website Displaying Fifa World Cup Stats On Graphs"
 ];
 
-const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 10;
+const imgLinks = [
+  "https://rsxutoronto.wixsite.com/mysite/seek-jr-2024",
+  "https://www.sandc.com/",
+  "https://devpost.com/software/smart-bin-owq4am",
+  "https://sites.google.com/site/ironbears854",
+  "https://github.com/Rababb-P/UofTCreate2024Capstone",
+];
+
 const DRAG_BUFFER = 50;
 
 const SPRING_OPTIONS = {
@@ -37,25 +45,7 @@ const SPRING_OPTIONS = {
 
 export const SwipeCarousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
-
   const dragX = useMotionValue(0);
-
-  useEffect(() => {
-    const intervalRef = setInterval(() => {
-      const x = dragX.get();
-
-      if (x === 0) {
-        setImgIndex((pv) => {
-          if (pv === imgs.length - 1) {
-            return 0;
-          }
-          return pv + 1;
-        });
-      }
-    }, AUTO_DELAY);
-
-    return () => clearInterval(intervalRef);
-  }, []);
 
   const onDragEnd = () => {
     const x = dragX.get();
@@ -67,8 +57,25 @@ export const SwipeCarousel = () => {
     }
   };
 
+  const goToNextSlide = () => {
+    setImgIndex((prev) => (prev === imgs.length - 1 ? 0 : prev + 1));
+  };
+
+  const goToPreviousSlide = () => {
+    setImgIndex((prev) => (prev === 0 ? imgs.length - 1 : prev - 1));
+  };
+
   return (
     <div className="carousel-container">
+
+      <div className="click-me-instruction">Click on the images to learn more!</div>
+
+      <button className="arrow-left" onClick={goToPreviousSlide}>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 5l-7 7 7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
       <motion.div
         drag="x"
         dragConstraints={{
@@ -88,6 +95,12 @@ export const SwipeCarousel = () => {
         <Images imgIndex={imgIndex} />
       </motion.div>
 
+      <button className="arrow-right" onClick={goToNextSlide}>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 19l7-7-7-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
       <GradientEdges />
     </div>
@@ -98,21 +111,28 @@ const Images = ({ imgIndex }) => {
   return (
     <>
       {imgs.map((imgSrc, idx) => (
-        <motion.div
+        <a
+          href={imgLinks[idx]}
+          target="_blank"
+          rel="noopener noreferrer"
           key={idx}
-          style={{
-            backgroundImage: `url(${imgSrc})`,
-          }}
-          animate={{
-            scale: imgIndex === idx ? 0.95 : 0.85,
-          }}
-          transition={SPRING_OPTIONS}
-          className="image-container"
+          className="image-link"
         >
-          <div className="image-text">
-            {imgTexts[idx]}
-          </div>
-        </motion.div>
+          <motion.div
+            style={{
+              backgroundImage: `url(${imgSrc})`,
+            }}
+            animate={{
+              scale: imgIndex === idx ? 0.95 : 0.85,
+            }}
+            transition={SPRING_OPTIONS}
+            className="image-container"
+          >
+            <div className="image-text">
+              {imgTexts[idx]}
+            </div>
+          </motion.div>
+        </a>
       ))}
     </>
   );

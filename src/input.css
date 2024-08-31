@@ -170,7 +170,7 @@ body {
 
 .top-about {
   position: absolute;
-  top: 130vh;
+  top: 135vh;
 }
 
 html {
@@ -441,4 +441,38 @@ html {
   .top-landing {
 
   }
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 2.6vh;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 3.2vh;
+}
+
+.arrow-right {
+  right: 3.2vh;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.click-me-instruction {
+  margin-top: 2vh;
+  text-align: center;
+  color: rgb(160, 151, 151);
+  font-size: 1.5vh;
+  font-weight: bold;
 }
