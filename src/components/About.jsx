@@ -1,153 +1,27 @@
-import React, { useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
-import firstIcon from "../assets/firsticon.svg";
-import githubIcon from "../assets/githubicon.svg";
-import hockeyStickIcon from "../assets/hockeystickicon.svg";
-import instagramIcon from "../assets/instagram.svg";
-import seekJrWin from "../assets/seekjrwin.png";
-import sandc from "../assets/sandcpic.png";
-import aisort from "../assets/aisortnocam.jpg";
-import frcpic from "../assets/frcpic.png";
+import React from 'react'
+import { motion } from 'framer-motion';
+import { SwipeCarousel } from './SwipeCarousel';
+import AnimatedLetters from './AnimatedLetters';
 
-const imgs = [
-  seekJrWin,
-  sandc,
-  aisort,
-  frcpic,
-];
-
-const imgTexts = [
-  "",
-  "Job Shadowing Program at S&C Electric Canada Ltd.",
-  "AI Garbage and Recycling Sorter",
-  "Head of Programming of Iron Bears FRC Team 854",
-];
-
-const imgLinks = [
-  "#", // Add your links here
-  "https://example.com/sc-electric",
-  "https://example.com/ai-sorter",
-  "https://example.com/frc-team",
-];
-
-const DRAG_BUFFER = 50;
-
-const SPRING_OPTIONS = {
-  type: "spring",
-  mass: 3,
-  stiffness: 400,
-  damping: 50,
-};
-
-export const SwipeCarousel = () => {
-  const [imgIndex, setImgIndex] = useState(0);
-  const dragX = useMotionValue(0);
-
-  const onDragEnd = () => {
-    const x = dragX.get();
-
-    if (x <= -DRAG_BUFFER && imgIndex < imgs.length - 1) {
-      setImgIndex((pv) => pv + 1);
-    } else if (x >= DRAG_BUFFER && imgIndex > 0) {
-      setImgIndex((pv) => pv - 1);
-    }
-  };
-
-  const goToNextSlide = () => {
-    setImgIndex((prev) => (prev === imgs.length - 1 ? 0 : prev + 1));
-  };
-
-  const goToPreviousSlide = () => {
-    setImgIndex((prev) => (prev === 0 ? imgs.length - 1 : prev - 1));
-  };
-
+const About = () => {
   return (
-    <div className="carousel-container">
-      {/* Arrow button for previous slide */}
-      <button className="arrow-left" onClick={goToPreviousSlide}>
-        &larr;
-      </button>
+    <motion.div
+      initial={{ translateY: "20vh" }} 
+      animate={{ translateY: "35vh" }} 
+      transition={{ duration: 1 }}
+    >
+      <div id="about" className="top-about"></div>
+      <div className="about-page-text">
+        <p >
+          My Projects and Experiences in Tech
+        </p>
+      </div>
+      <div><SwipeCarousel /></div>
+      
+      
 
-      <motion.div
-        drag="x"
-        dragConstraints={{
-          left: 0,
-          right: 0,
-        }}
-        style={{
-          x: dragX,
-        }}
-        animate={{
-          translateX: `-${imgIndex * 100}%`,
-        }}
-        transition={SPRING_OPTIONS}
-        onDragEnd={onDragEnd}
-        className="carousel-inner"
-      >
-        <Images imgIndex={imgIndex} />
-      </motion.div>
+    </motion.div>
+  )
+}
 
-      {/* Arrow button for next slide */}
-      <button className="arrow-right" onClick={goToNextSlide}>
-        &rarr;
-      </button>
-
-      <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
-      <GradientEdges />
-    </div>
-  );
-};
-
-const Images = ({ imgIndex }) => {
-  return (
-    <>
-      {imgs.map((imgSrc, idx) => (
-        <a
-          href={imgLinks[idx]}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={idx}
-          className="image-link"
-        >
-          <motion.div
-            style={{
-              backgroundImage: `url(${imgSrc})`,
-            }}
-            animate={{
-              scale: imgIndex === idx ? 0.95 : 0.85,
-            }}
-            transition={SPRING_OPTIONS}
-            className="image-container"
-          >
-            <div className="image-text">
-              {imgTexts[idx]}
-            </div>
-          </motion.div>
-        </a>
-      ))}
-    </>
-  );
-};
-
-const Dots = ({ imgIndex, setImgIndex }) => {
-  return (
-    <div className="dots-container">
-      {imgs.map((_, idx) => (
-        <button
-          key={idx}
-          onClick={() => setImgIndex(idx)}
-          className={`dot ${idx === imgIndex ? "dot-active" : "dot-inactive"}`}
-        />
-      ))}
-    </div>
-  );
-};
-
-const GradientEdges = () => {
-  return (
-    <>
-      <div className="gradient-edge gradient-edge-left" />
-      <div className="gradient-edge gradient-edge-right" />
-    </>
-  );
-};
+export default About
