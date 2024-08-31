@@ -7,27 +7,27 @@ import frcpic from "../assets/frcpic.png";
 import fifa from "../assets/fifasite.png";
 
 const imgs = [
-  seekJrWin,
-  sandc,
-  aisort,
-  frcpic,
+  aisort,  
   fifa,
+  sandc,
+  seekJrWin,
+  frcpic,
 ];
 
 const imgTexts = [
+  "AI Garbage and Recycling Sorter",  
+  "Website Displaying Fifa World Cup Stats On Graphs",
+  "Job Shadowing Program at S&C Electric Canada Ltd.",  
   "",
-  "Job Shadowing Program at S&C Electric Canada Ltd.",
-  "AI Garbage and Recycling Sorter",
   "Head of Programming of Iron Bears FRC Team 854",
-  "Website Displaying Fifa World Cup Stats On Graphs"
 ];
 
 const imgLinks = [
-  "https://rsxutoronto.wixsite.com/mysite/seek-jr-2024",
-  "https://www.sandc.com/",
-  "https://devpost.com/software/smart-bin-owq4am",
-  "https://sites.google.com/site/ironbears854",
+  "https://devpost.com/software/smart-bin-owq4am", 
   "https://github.com/Rababb-P/UofTCreate2024Capstone",
+  "https://www.sandc.com/",  
+  "https://rsxutoronto.wixsite.com/mysite/seek-jr-2024",
+  "https://sites.google.com/site/ironbears854",
 ];
 
 const DRAG_BUFFER = 50;
