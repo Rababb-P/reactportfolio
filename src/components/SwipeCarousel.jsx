@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import firstIcon from "../assets/firsticon.svg";
-import githubIcon from "../assets/githubicon.svg";
-import hockeyStickIcon from "../assets/hockeystickicon.svg";
-import instagramIcon from "../assets/instagram.svg";
 import seekJrWin from "../assets/seekjrwin.png";
 import sandc from "../assets/sandcpic.png";
 import aisort from "../assets/aisortnocam.jpg";
