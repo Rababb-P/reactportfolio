@@ -4,11 +4,16 @@ import Cube from "./Cube";
 import AnimatedLetters from "./AnimatedLetters";
 import "../beac-button.css";
 import Accordion from "./Accordion";
+import useFadeInOnScroll from "./fadehook"; // Import the custom hook
 
 const Hobbies = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
-  
+
+  // Use the custom hook for fade-in effect
+  const hobbiesTextRef = useFadeInOnScroll();
+  const accordionRef = useFadeInOnScroll();
+
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -27,23 +32,24 @@ const Hobbies = () => {
         transition={{ duration: 1 }}
       >
         <div id="hobbies" className="top-hobbies"></div>
-        <div className="hobbies-page-text">
-          Activities
-          {/* <AnimatedLetters
+        {/* Apply fade-in effect to the hobbies text */}
+        <div className="hobbies-page-text" ref={hobbiesTextRef}>
+          <AnimatedLetters
             letterClass={letterClass}
-            strArray={["A", "c", "t", "i", "v","i", "t", "i", "e", "s"]}
+            strArray={["A", "c", "t", "i", "v", "i", "t", "i", "e", "s"]}
             idx={15}
-          /> */}
+          />
         </div>
         <Cube />
       </motion.div>
 
-      <div className="accordion">
+      {/* Apply fade-in effect to the accordion container */}
+      <div className="accordion" ref={accordionRef}>
         <Accordion
           title="School Clubs"
           answer={[
             "I am the Co-President of Martingrove Collegiate Institute's newspaper club, The Beacon. We release issues monthly and print 500 copies of each issue to distribute to our school.",
-            "I am the student-elected Vice-President of Martingrove Collegiate Institute's Student Administrative Council. I help organize and run assemblies, clubs, spirit days, events and more at my school.",
+            "I am the student-elected Vice-President of Martingrove Collegiate Institute's Student Administrative Council. I help organize and run assemblies, clubs, spirit days, events, and more at my school.",
             "I am the head of programming for Martingrove Collegiate Institute's First Robotics Team, Team 854, Iron Bears. I code our robot in Java using the WPILIB framework and teach younger students how to do the same."
           ]}
           isOpen={openAccordionIndex === 0}

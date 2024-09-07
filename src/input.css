@@ -1,22 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-*/
 
 * {
   box-sizing: border-box;
@@ -24,6 +11,10 @@
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
@@ -34,7 +25,7 @@ body {
 .nav {
   position: sticky;
   top: 0;
-  background-color: transparent;
+  background-color: black;
   color: white;
   display: flex;
   z-index: 1000;
@@ -179,7 +170,6 @@ html {
 
 .bg-blackish {
   background-color: black;
-  height: 280vh;
 }
 
 .particles {
@@ -192,7 +182,7 @@ html {
 }
 
 .webheight {
-  height: 370vh;
+  height: 380vh;
 }
 
 .accordion {
@@ -240,7 +230,7 @@ html {
 .contact-text {
   color: white;
   position: absolute;
-  top: 320vh;
+  top: 330vh;
   left: 70vh;
   transform: translate(-40vh, -35vh);
   text-align: center;
@@ -249,7 +239,7 @@ html {
 
 .contactimages {
   position: relative;
-  top: 285vh;
+  top: 295vh;
   width: 200vh;
 }
 
@@ -472,7 +462,33 @@ html {
 .click-me-instruction {
   margin-top: 2vh;
   text-align: center;
-  color: rgb(160, 151, 151);
+  color: rgb(175, 166, 166);
   font-size: 1.5vh;
   font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease forwards; /* Forward to keep final state */
+}
+
+.fadeOut {
+  animation: fadeOut 2s ease forwards; /* Forward to keep final state */
 }

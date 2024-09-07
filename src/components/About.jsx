@@ -2,8 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { SwipeCarousel } from './SwipeCarousel';
 import AnimatedLetters from './AnimatedLetters';
+import useFadeInOnScroll from './fadehook';
 
 const About = () => {
+  const textRef = useFadeInOnScroll();
+
   return (
     <motion.div
       initial={{ translateY: "20vh" }} 
@@ -11,7 +14,7 @@ const About = () => {
       transition={{ duration: 1 }}
     >
       <div id="about" className="top-about"></div>
-      <div className="about-page-text">
+      <div ref={textRef} className="about-page-text">
         <p >
           My Projects and Experiences in Tech
         </p>
