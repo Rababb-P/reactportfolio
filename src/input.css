@@ -335,6 +335,7 @@ html {
   background-size: cover;
   background-position: center;
   transition: transform 0.5s;
+  border-radius: 2vh;
 }
 
 .image-text {
@@ -438,6 +439,7 @@ html {
 .arrow-left,
 .arrow-right {
   position: absolute;
+  border-radius: 25%;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
