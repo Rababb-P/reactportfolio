@@ -61,12 +61,16 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
+          value: "#3a61c6",
         },
         links: {
           distance: 150,
           enable: true,
           opacity: 0.3,
           width: 1,
+          color: {
+            value: "#0",
+          }
         },
         move: {
           direction: "none",
