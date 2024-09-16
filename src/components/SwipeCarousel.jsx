@@ -5,11 +5,8 @@ import sandc from "../assets/sandcpic.png";
 import aisort from "../assets/aisortnocam.jpg";
 import frcpic from "../assets/frcpic.png";
 import fifa from "../assets/fifasite.png";
-import studysync from "../assets/studysyncpic.jpg";
-
 
 const imgs = [
-  studysync,
   aisort,  
   fifa,
   sandc,
@@ -22,7 +19,7 @@ const imgTexts = [
   "AI Garbage and Recycling Sorter",  
   "Website Displaying Fifa World Cup Stats On Graphs",
   "Job Shadowing Program at S&C Electric Canada Ltd.",  
-  "",
+  "Seek Jr 2024 UofT Winner",
   "Head of Programming of Iron Bears FRC Team 854",
 ];
 
