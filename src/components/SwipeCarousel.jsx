@@ -5,8 +5,11 @@ import sandc from "../assets/sandcpic.png";
 import aisort from "../assets/aisortnocam.jpg";
 import frcpic from "../assets/frcpic.png";
 import fifa from "../assets/fifasite.png";
+import studysync from "../assets/studysyncpic.jpg";
+
 
 const imgs = [
+  studysync,
   aisort,  
   fifa,
   sandc,
@@ -15,6 +18,7 @@ const imgs = [
 ];
 
 const imgTexts = [
+  "Hack The North 2024 Award Winner",
   "AI Garbage and Recycling Sorter",  
   "Website Displaying Fifa World Cup Stats On Graphs",
   "Job Shadowing Program at S&C Electric Canada Ltd.",  
@@ -23,6 +27,7 @@ const imgTexts = [
 ];
 
 const imgLinks = [
+  "https://devpost.com/software/studying-with-hack-the-north?ref_content=user-portfolio&ref_feature=in_progress",
   "https://devpost.com/software/smart-bin-owq4am", 
   "https://github.com/Rababb-P/UofTCreate2024Capstone",
   "https://www.sandc.com/",  
