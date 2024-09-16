@@ -5,8 +5,10 @@ import sandc from "../assets/sandcpic.png";
 import aisort from "../assets/aisortnocam.jpg";
 import frcpic from "../assets/frcpic.png";
 import fifa from "../assets/fifasite.png";
+import studysync from "../assets/studysync.jpg";
 
 const imgs = [
+  studysync,
   aisort,  
   fifa,
   sandc,
