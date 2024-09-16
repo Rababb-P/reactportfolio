@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*3a61c6 Old Blue*/
 
 * {
   box-sizing: border-box;
@@ -84,13 +85,13 @@ body {
 }
 
 .page-link:hover {
-  color: #3a61c6;
+  color: #8968CD;
   cursor: pointer;
 }
 
 .page-link:hover::after {
   width: 100%;
-  background-color: #3a61c6;
+  background-color: #8968CD;
 }
 
 .hobbies-page-text {
@@ -264,7 +265,7 @@ html {
 }
 
 .link:hover {
-  color: #3a61c6;
+  color: #8968CD;
 }
 
 .link-heading {
@@ -277,7 +278,7 @@ html {
 }
 
 .link-heading:hover {
-  color: #3a61c6;  /* Blue color */
+  color: #8968CD;  /* Blue color */
 }
 
 .link-heading-md {

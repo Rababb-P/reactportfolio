@@ -5,7 +5,7 @@ import githubIcon from "../assets/githubicon.svg";
 import linkedinicon from "../assets/linkedinicon.svg";
 import instagramIcon from "../assets/instagram.svg";
 import BeaconIcon from "../assets/apple-touch-icon.png";
-import ResumeIcon from "../assets/resume3.png";
+import ResumeIcon from "../assets/resume.svg";
 import "../input.css";
 
 const imgs = [
