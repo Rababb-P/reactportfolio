@@ -16,7 +16,9 @@ function App() {
       <div className=' webheight bg-blackish'>
         <Navbar />
         <div>
-          <ParticlesComponent />
+          <div className = 'site-width'>
+            <ParticlesComponent />
+          </div>
           <Landing />
           <Hobbies />
           <About />
