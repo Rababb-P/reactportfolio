@@ -32,7 +32,7 @@ const imgLinks = [
   "https://www.linkedin.com/in/rababb-pannu/",
   "https://www.instagram.com/rababb_p",
   "https://martingrovebeacon.com/",
-  "https://www.canva.com/design/DAF5PLcIfdw/-AlQ14L7cG6Mlv5aMs15mA/edit?utm_content=DAF5PLcIfdw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+  "https://drive.google.com/file/d/1mZPWSs92euLjzjD9exuwSuFwyagcyLbh/view?usp=sharing"
 ];
 
 export const HoverImageLinks = () => {
